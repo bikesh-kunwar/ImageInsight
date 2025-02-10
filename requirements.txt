@@ -1,0 +1,4 @@
+flask==3.0.2
+azure-cognitiveservices-vision-computervision==0.9.0
+python-dotenv==1.0.0
+pillow==10.3.0

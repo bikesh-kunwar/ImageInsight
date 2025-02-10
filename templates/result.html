@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <img src="{{ url_for('static', filename=image_url) }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+    
+    <h2>Tags:</h2>
+    <ul>
+        {% for tag in analysis.tags %}
+            <li>{{ tag.name }} (Confidence: {{ "%.2f"|format(tag.confidence) }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Captions:</h2>
+    <ul>
+        {% for caption in analysis.description.captions %}
+            <li>{{ caption.text }} (Confidence: {{ "%.2f"|format(caption.confidence) }})</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Objects:</h2>
+    <ul>
+        {% for obj in analysis.objects %}
+            <li>{{ obj.object_property }} (Confidence: {{ "%.2f"|format(obj.confidence) }})</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('index') }}">Upload Another Image</a>
+</body>
+</html>
