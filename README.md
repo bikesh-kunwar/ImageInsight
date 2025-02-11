@@ -137,14 +137,5 @@ Distributed under MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Created with ❤️ by Bikesh**  
+**Created with ❤️ by bikesh-kunwar**  
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/your-username)
-
-### To Complete Your README:
-1. Replace all instances of `your-username` with your GitHub username
-2. Update `[Your Name]` with your actual name
-3. Add your demo GIF to `static/demo.gif`
-4. Ensure you have a LICENSE file in your project
-5. Verify all links and Azure setup instructions match your configuration
-
-This README is properly ordered and formatted for immediate use. Just copy-paste and replace the placeholder values! 🚀
