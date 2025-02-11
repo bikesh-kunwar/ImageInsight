@@ -99,8 +99,6 @@ ImageInsight/
 ├── templates/
 │   ├── index.html         # Upload interface
 │   └── result.html        # Results display
-└── tests/
-    └── test_app.py        # Unit tests
 ```
 
 ## 🔒 Security Best Practices
