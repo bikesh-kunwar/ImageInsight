@@ -1,3 +1,6 @@
+Here's the properly formatted README.md ready for copy-pasting:
+
+```markdown
 # ImageInsight 🔍📸
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +9,7 @@
 
 A web application powered by **Azure Computer Vision** that provides AI-powered image analysis. Upload any image to get instant insights including tags, descriptive captions, and detected objects.
 
-![Demo](static/demo.gif) *Replace with your actual demo GIF*
+![Demo](static/demo.gif) <!-- Replace with your actual demo GIF -->
 
 ## 🌟 Features
 
@@ -46,3 +49,110 @@ A web application powered by **Azure Computer Vision** that provides AI-powered 
    ```bash
    git clone https://github.com/your-username/ImageInsight.git
    cd ImageInsight
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Azure Setup**
+   - Create a Computer Vision resource in [Azure Portal](https://portal.azure.com/)
+   - Get your:
+     - **API Key**
+     - **Endpoint URL**
+
+4. **Configure Environment**
+   Create `.env` file:
+   ```plaintext
+   API_KEY=your_azure_key_here
+   ENDPOINT=your_azure_endpoint_here
+   ```
+
+5. **Run the Application**
+   ```bash
+   python app.py
+   ```
+   Visit ➡️ `http://localhost:5000`
+
+## 🏗️ Architecture
+
+```mermaid
+graph TD
+    A[User] --> B[Flask Web Interface]
+    B --> C[Image Processing]
+    C --> D[Azure Computer Vision API]
+    D --> E[Analysis Results]
+    E --> B
+    B --> A
+```
+
+## 📂 Project Structure
+
+```
+ImageInsight/
+├── app.py                 # Main application logic
+├── requirements.txt       # Dependency list
+├── README.md              # This documentation
+├── .gitignore             # Ignored files/folders
+├── .env                   # Environment variables
+├── static/
+│   ├── styles.css         # Styling
+│   └── uploads/           # Uploaded images storage
+├── templates/
+│   ├── index.html         # Upload interface
+│   └── result.html        # Results display
+└── tests/
+    └── test_app.py        # Unit tests
+```
+
+## 🔒 Security Best Practices
+
+1. **Never commit sensitive data**
+   - Keep `.env` in `.gitignore`
+2. **Azure Key Management**
+   - Use least-privilege access
+   - Rotate keys regularly
+3. **Input Validation**
+   - File type restrictions
+   - Size limitations
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the project
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. Commit changes:
+   ```bash
+   git commit -m 'Add amazing feature'
+   ```
+4. Push to branch:
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+5. Open a Pull Request
+
+## 📜 License
+
+Distributed under MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+**Created with ❤️ by [Your Name]**  
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/your-username)
+```
+
+---
+
+### To Complete Your README:
+1. Replace all instances of `your-username` with your GitHub username
+2. Update `[Your Name]` with your actual name
+3. Add your demo GIF to `static/demo.gif`
+4. Ensure you have a LICENSE file in your project
+5. Verify all links and Azure setup instructions match your configuration
+
+This README is properly ordered and formatted for immediate use. Just copy-paste and replace the placeholder values! 🚀
