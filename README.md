@@ -1,6 +1,3 @@
-Here's the properly formatted README.md ready for copy-pasting:
-
-```markdown
 # ImageInsight 🔍📸
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -144,9 +141,6 @@ Distributed under MIT License. See [LICENSE](LICENSE) for details.
 
 **Created with ❤️ by [Your Name]**  
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/your-username)
-```
-
----
 
 ### To Complete Your README:
 1. Replace all instances of `your-username` with your GitHub username
