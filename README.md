@@ -139,7 +139,7 @@ Distributed under MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-**Created with ❤️ by [Your Name]**  
+**Created with ❤️ by Bikesh**  
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/your-username)
 
 ### To Complete Your README:
